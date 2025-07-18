@@ -1,5 +1,5 @@
 :root {
-  --gray-50:  #fdf6f8;
+  --gray-50: #fdf6f8;
   --gray-100: #f9ecef;
   --gray-200: #f0dde2;
   --gray-300: #e1c6d1;
@@ -44,12 +44,12 @@
 }
 
 :root:has([value="🌑"]:checked) {
-    --bg: var(--gray-900);
-    --text: var(--gray-50);
-    --card-bg: var(--gray-800);
-    --card-text: var(--gray-100);
-    --button-bg: var(--gray-600);
-    --button-text: var(--gray-50);
+  --bg: var(--gray-900);
+  --text: var(--gray-50);
+  --card-bg: var(--gray-800);
+  --card-text: var(--gray-100);
+  --button-bg: var(--gray-600);
+  --button-text: var(--gray-50);
 }
 
 
@@ -72,7 +72,14 @@ body {
   color: var(--text);
 }
 
-body, p, h1, h2, h3, h4, h5, h6 {
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
@@ -121,10 +128,11 @@ header svg {
   fill: var(--text);
 }
 
-.color-picker input[type="radio"] {
-  display: none; 
+.color-picker label:has(input[type="radio"]:focus-visible) {
+  outline: 2px dotted var(--carnation-pink);
+  outline-offset: 2px;
 }
 
 .color-picker label:has(input[type="radio"]:checked) {
-background-color: var(--button-bg);
+  background-color: var(--button-bg);
 }
