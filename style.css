@@ -52,8 +52,6 @@
   --button-text: var(--gray-50);
 }
 
-
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -93,7 +91,7 @@ h6 {
 
 .drop-line {
   height: 2px;
-  background-color: red;
+  background-color: var(--light-sky-blue);
   margin: 4px 0;
   border-radius: 1px;
 }
