@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TINT</title>
-  <link rel="stylesheet" href="src/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -51,11 +51,27 @@
     </form>
   </header>
 
-  <div class="card">
-    <p class="card-text">Card text</p>
-    <p class="card-creator">Creator name</p>
-    <p class="card-owner">Issue owner name</p>
+  <div class="column" id="" col-1>
+    <div class="card" draggable="true" id="col-1-card-1">
+      <p class="card-text">Card One</p>
+      <p class="card-creator">Creator name</p>
+      <p class="card-owner">Issue owner name</p>
+    </div>
+
+    <div class="card" draggable="true" id="col-1-card-2">
+      <p class="card-text">Card Two</p>
+      <p class="card-creator">Creator name</p>
+      <p class="card-owner">Issue owner name</p>
+    </div>
+
+    <div class="card" draggable="true" id="col-1-card-3">
+      <p class="card-text">Card Three</p>
+      <p class="card-creator">Creator name</p>
+      <p class="card-owner">Issue owner name</p>
+    </div>
   </div>
+
+  <script type="module" src="src/main.ts"></script>
 </body>
 
 </html>
