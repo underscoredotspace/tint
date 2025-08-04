@@ -34,7 +34,8 @@
   }
 }
 
-:root:has([value="☀️"]:checked) {
+:root:has([value="☀️"]:checked),
+:root[data-theme="☀️"] {
   --bg: var(--gray-50);
   --text: var(--gray-900);
   --card-bg: var(--gray-100);
@@ -43,7 +44,8 @@
   --button-text: var(--gray-50);
 }
 
-:root:has([value="🌑"]:checked) {
+:root:has([value="🌑"]:checked),
+:root[data-theme="🌑"] {
   --bg: var(--gray-900);
   --text: var(--gray-50);
   --card-bg: var(--gray-800);
@@ -147,30 +149,30 @@ header svg {
   width: min-content;
 }
 
-.color-picker fieldset {
+.theme-picker fieldset {
   display: flex;
   border: 0;
   padding: 0;
   margin: 0;
 }
 
-.color-picker label {
+.theme-picker label {
   display: flex;
   color: var(--button-text);
   padding: 0.25rem;
 }
 
-.color-picker svg {
+.theme-picker svg {
   height: 1rem;
   width: 1rem;
   fill: var(--text);
 }
 
-.color-picker label:has(input[type="radio"]:focus-visible) {
+.theme-picker label:has(input[type="radio"]:focus-visible) {
   outline: 2px dotted var(--carnation-pink);
   outline-offset: 2px;
 }
 
-.color-picker label:has(input[type="radio"]:checked) {
+.theme-picker label:has(input[type="radio"]:checked) {
   background-color: var(--button-bg);
 }

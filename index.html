@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+  <script>
+    try {
+      const theme = localStorage.getItem("tint__theme")
+
+      if (theme) {
+        document.documentElement.setAttribute("data-theme", theme)
+      }
+    } catch { }
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TINT</title>
@@ -18,7 +27,7 @@
           vector-effect="non-scaling-stroke" />
       </g>
     </svg>
-    <form class="color-picker">
+    <form class="theme-picker">
       <fieldset>
         <legend class="visually-hidden">Choose a theme:</legend>
         <label>
@@ -72,6 +81,7 @@
   </div>
 
   <script type="module" src="src/main.ts"></script>
+  <script src="src/theme.ts"></script>
 </body>
 
 </html>
